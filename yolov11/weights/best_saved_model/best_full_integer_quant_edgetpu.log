@@ -1,0 +1,35 @@
+Edge TPU Compiler version 16.0.384591198
+Input: /kaggle/working/runs/yolov11/weights/best_saved_model/best_full_integer_quant.tflite
+Output: /kaggle/working/runs/yolov11/weights/best_saved_model/best_full_integer_quant_edgetpu.tflite
+
+Operator                       Count      Status
+
+SPLIT                          4          For example, a fully-connected or softmax layer with 2D output
+SPLIT                          2          Mapped to Edge TPU
+LOGISTIC                       44         More than one subgraph is not supported
+LOGISTIC                       34         Mapped to Edge TPU
+MUL                            46         More than one subgraph is not supported
+MUL                            34         Mapped to Edge TPU
+SUB                            2          More than one subgraph is not supported
+DEPTHWISE_CONV_2D              6          More than one subgraph is not supported
+PAD                            5          Mapped to Edge TPU
+PAD                            2          More than one subgraph is not supported
+ADD                            10         More than one subgraph is not supported
+ADD                            7          Mapped to Edge TPU
+MAX_POOL_2D                    3          Mapped to Edge TPU
+QUANTIZE                       3          More than one subgraph is not supported
+FULLY_CONNECTED                4          More than one subgraph is not supported
+CONV_2D                        46         More than one subgraph is not supported
+CONV_2D                        163        Mapped to Edge TPU
+RESIZE_NEAREST_NEIGHBOR        2          More than one subgraph is not supported
+CONCATENATION                  8          Mapped to Edge TPU
+CONCATENATION                  15         More than one subgraph is not supported
+SOFTMAX                        2          More than one subgraph is not supported
+PACK                           2          More than one subgraph is not supported
+RESHAPE                        13         More than one subgraph is not supported
+RESHAPE                        5          Mapped to Edge TPU
+STRIDED_SLICE                  11         Mapped to Edge TPU
+STRIDED_SLICE                  12         More than one subgraph is not supported
+TRANSPOSE                      2          Operation is otherwise supported, but not mapped due to some unspecified limitation
+TRANSPOSE                      3          Mapped to Edge TPU
+TRANSPOSE                      8          More than one subgraph is not supported

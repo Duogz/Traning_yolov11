@@ -1,0 +1,30 @@
+Edge TPU Compiler version 16.0.384591198
+Input: /kaggle/working/runs/yolov9/weights/best_saved_model/best_full_integer_quant.tflite
+Output: /kaggle/working/runs/yolov9/weights/best_saved_model/best_full_integer_quant_edgetpu.tflite
+
+Operator                       Count      Status
+
+TRANSPOSE                      2          Operation is otherwise supported, but not mapped due to some unspecified limitation
+TRANSPOSE                      2          Mapped to Edge TPU
+MAX_POOL_2D                    3          Mapped to Edge TPU
+QUANTIZE                       1          More than one subgraph is not supported
+QUANTIZE                       2          Mapped to Edge TPU
+STRIDED_SLICE                  4          More than one subgraph is not supported
+STRIDED_SLICE                  16         Mapped to Edge TPU
+AVERAGE_POOL_2D                5          Mapped to Edge TPU
+LOGISTIC                       179        Mapped to Edge TPU
+LOGISTIC                       1          More than one subgraph is not supported
+PAD                            7          Mapped to Edge TPU
+SUB                            2          More than one subgraph is not supported
+RESHAPE                        4          More than one subgraph is not supported
+RESHAPE                        2          Mapped to Edge TPU
+ADD                            42         Mapped to Edge TPU
+ADD                            2          More than one subgraph is not supported
+MUL                            2          More than one subgraph is not supported
+MUL                            179        Mapped to Edge TPU
+SOFTMAX                        1          More than one subgraph is not supported
+CONV_2D                        185        Mapped to Edge TPU
+CONV_2D                        1          More than one subgraph is not supported
+RESIZE_NEAREST_NEIGHBOR        2          Mapped to Edge TPU
+CONCATENATION                  30         Mapped to Edge TPU
+CONCATENATION                  2          More than one subgraph is not supported
