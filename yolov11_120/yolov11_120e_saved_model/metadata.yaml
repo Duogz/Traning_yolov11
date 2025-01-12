@@ -1,0 +1,15 @@
+description: Ultralytics YOLO11n model trained on /content/drive/MyDrive/Yolov8/dataset/data.yaml
+author: Ultralytics
+date: '2025-01-12T04:16:14.254313'
+version: 8.3.59
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 320
+- 320
+names:
+  0: Person
+args: {}
