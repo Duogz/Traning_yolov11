@@ -1,0 +1,46 @@
+Edge TPU Compiler version 16.0.384591198
+Input: /kaggle/working/runs/yolov10/weights/best_saved_model/best_full_integer_quant.tflite
+Output: /kaggle/working/runs/yolov10/weights/best_saved_model/best_full_integer_quant_edgetpu.tflite
+
+Operator                       Count      Status
+
+RESHAPE                        2          Tensor has unsupported rank (up to 3 innermost dimensions mapped)
+RESHAPE                        23         More than one subgraph is not supported
+RESHAPE                        2          Operation is working on an unsupported data type
+STRIDED_SLICE                  25         More than one subgraph is not supported
+TRANSPOSE                      2          Operation is otherwise supported, but not mapped due to some unspecified limitation
+TRANSPOSE                      12         More than one subgraph is not supported
+MAX_POOL_2D                    3          More than one subgraph is not supported
+GATHER_ND                      2          Operation not supported
+DEPTHWISE_CONV_2D              12         More than one subgraph is not supported
+SOFTMAX                        2          More than one subgraph is not supported
+LESS                           1          Operation is working on an unsupported data type
+DEQUANTIZE                     4          Operation is working on an unsupported data type
+MUL                            71         Operation version not supported
+MUL                            1          Operation is working on an unsupported data type
+SUB                            1          More than one subgraph is not supported
+CAST                           5          Operation is working on an unsupported data type
+PAD                            1          Mapped to Edge TPU
+PAD                            6          More than one subgraph is not supported
+LOGISTIC                       69         More than one subgraph is not supported
+LOGISTIC                       1          Mapped to Edge TPU
+TILE                           1          Operation is working on an unsupported data type
+ADD                            12         Operation version not supported
+ADD                            3          Operation is working on an unsupported data type
+FLOOR_MOD                      3          Operation is working on an unsupported data type
+QUANTIZE                       1          Operation is otherwise supported, but not mapped due to some unspecified limitation
+QUANTIZE                       3          More than one subgraph is not supported
+FULLY_CONNECTED                4          More than one subgraph is not supported
+CONV_2D                        1          Mapped to Edge TPU
+CONV_2D                        197        More than one subgraph is not supported
+RESIZE_NEAREST_NEIGHBOR        2          More than one subgraph is not supported
+CONCATENATION                  20         More than one subgraph is not supported
+CONCATENATION                  1          Operation is working on an unsupported data type
+CONCATENATION                  2          Tensor has unsupported rank (up to 3 innermost dimensions mapped)
+PACK                           2          More than one subgraph is not supported
+SPLIT                          4          For example, a fully-connected or softmax layer with 2D output
+SPLIT                          2          More than one subgraph is not supported
+REDUCE_MAX                     1          More than one subgraph is not supported
+GATHER                         1          Operation not supported
+TOPK_V2                        1          Operation is working on an unsupported data type
+TOPK_V2                        1          Operation not supported
